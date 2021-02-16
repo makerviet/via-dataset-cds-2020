@@ -27,6 +27,24 @@ In object detection task, we have 6 traffic signs (6 classes): Turn left, Turn R
 
 #### Semantic segmentation
 
+### How to use VIA Dataset
+
+#### Object detection
+
+In VIA experiment, we implement Single Shot Detection (SSD). You do not need to follow our instructions if you want to handle the data for only your purposes.
+
+1. Upload **VIA Dataset** to Google Drive
+2. Upload **object_detection.ipynb** to Google Colab 
+3. Modify your dataset locate path in Google Drive and your dataset path link to images and .csv files.
+
+You can run notebook in local with requirements: Keras version 2.2.4, Tensorflow version 1.15 and git clone this repository: 
+
+``` git clone https://github.com/pierluigiferrari/ssd_keras ```
+
+### How to implement into your custom dataset
+
+1. Label
+2. Use labeled dataset in internet
 
 Website: https://via.makerviet.org/
 
