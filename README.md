@@ -15,6 +15,16 @@ The repository contains:
 #### Object detection
 Object detection folder contains: dataset folder, two files .csv (test.csv, train.csv). The train.csv has 12,764 images and the test.csv has 2561 images. 
 
+```
+Object Detection 
+    │─── Data
+         |───000000_10.png
+         |───000001_10.png
+         |─── ...
+    │─── test.csv
+    │─── train.csv
+```
+
 The structure of .csv: 
 
 | filename | xmin | ymin | xmax | ymax | class_id |
@@ -26,6 +36,33 @@ In object detection task, we have 6 traffic signs (6 classes): Turn left, Turn R
 ![](https://i.imgur.com/jrmCOEW.png)
 
 #### Semantic segmentation
+
+Setup sementation data folders
+
+```
+Segmentation
+    │─── GGDataSet
+         |─── train_frames
+             |─── train
+                 |─── train_0000001.png
+         |─── train_masks
+             |─── train
+                 |─── train_0000001.png         
+         |─── val_frames
+             |─── val
+                 |─── val_0000001.png         
+         |─── val_masks
+             |─── val
+                 |─── val_0000001.png         
+         |─── label_colors.txt
+    │─── model_pb
+    │─── models
+    │─── train.py
+    │─── convert_pb.py
+```
+
+VIA segmentation dataset has 6,240 training images, 1,448 validation images. In our task, we have to predict 3 classes: Background, Line, Road. 
+The label_colors.txt contains RGB color code of classes and we handle it to convert classes into one-hot vector. 
 
 ### How to use VIA Dataset
 
