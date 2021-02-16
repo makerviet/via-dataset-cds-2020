@@ -87,7 +87,7 @@ In VIA experiment, we implement PSPNet and use combine-loss is Dice Loss and Foc
 
 To train segmentation task by VIA dataset, run the following commands
 
-```python
+```python=1
 # Keras 2.2.4, Tensorflow >= 1.15
 
 pip install -U segmentation-models
@@ -110,8 +110,25 @@ python3 convert_pb.py
 
 ### How to implement into your custom dataset
 
-1. Label
-2. Use labeled dataset in internet
+In object detection task, we use the [labelimg](https://github.com/tzutalin/labelImg) tool and the [labelme](https://github.com/wkentaro/labelme) tool to label segmentation dataset.
+
+To object detection, we need to convert .xml files to .csv as (train.csv above). This [xml_to_csv.py](https://github.com/datitran/raccoon_dataset/blob/master/xml_to_csv.py) to help you handle it, remember that in our .csv we only contains (filename, xmin,ymin,xmax,ymax,class_id).
+
+To semantic segmentation, the labelme tool export .json, we need to convert .json files to .png. Run the following commands
+
+```python=1
+git clone https://github.com/wkentaro/labelme.git
+
+cd labelme/examples/semantic_segmentation
+
+./labelme2voc.py data_annotated data_dataset_voc --labels labels.txt
+```
+
+You can see the label PNG file in `data_dataset_voc/SegmentationClassPNG/` folder.
+Modify `data_annotated` folder to `your_dataset`. 
+
+
+
 
 Website: https://via.makerviet.org/
 
