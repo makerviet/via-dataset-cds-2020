@@ -23,7 +23,9 @@ The structure of .csv:
 
 In object detection task, we have 6 traffic signs (6 classes): Turn left, Turn Right, Straight, Stop, No Turn Left, No Turn Right. 
 
+![](https://i.imgur.com/jrmCOEW.png)
 
+#### Semantic segmentation
 
 
 Website: https://via.makerviet.org/
