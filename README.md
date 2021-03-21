@@ -7,8 +7,8 @@ The repository contains:
 
 ### Download datasets
 
-* [Object detection](https://drive.google.com/file/d/1NGrKWHc1z_4bOh2huWHC8kZsUZFXOku-/view)
-* [Semantic segmentation](https://drive.google.com/file/d/1X-onXnGbrIwuXTt03rK-6FV3w2bGNyK8/view?usp=sharing)
+* [Object detection](https://github.com/makerhanoi/via-dataset-cds-2020/releases/download/v1.0/Data_SSD_Last.zip)
+* [Semantic segmentation](https://github.com/makerhanoi/via-dataset-cds-2020/releases/download/v1.0/Segmentation_Dataset.zip)
 
 ### Documentation
 
